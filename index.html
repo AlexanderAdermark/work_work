@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <script src="https://kit.fontawesome.com/d0d8222ea4.js" crossorigin="anonymous"></script>
   />
 
     <!--CSS Styles -->
@@ -19,7 +19,9 @@
   <body>
     <!-- Navbar -->
     <nav>
+    
       <h1><Span>A</Span>lexander <span>A</span>dermark</h1>
+      
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -50,8 +52,8 @@
         <!-- Auto width -->
 <button class="btn"><i class="fa fa-download"></i> Download</button>
 
-<!-- Full width -->
-<button class="btn" style="width:100%"><i class="fa fa-download"></i> Download</button>
+
+
       </div>
 </section>
 
@@ -176,25 +178,26 @@
     </section>
 
     <!-- Contact section -->
-
+         <section class="contact" id="contact">
     <div class="container">
-      <form action="">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last name</label>
-        <input for="lname" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="subject">Subject</label>
-        <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Write something.."></textarea>
-        <input type="submit" value="submit">
-      </form>
-
-    </div>
-
+      <h1>Contact</h1>
+      <hr>
+      <label for="name"><input type="text" id="name" placeholder="What's your name?"></label>
+      <label for="email"><input type="email" id="email" placeholder="Please enter your email"></label>
+      <label for="phone"><input type="number" id="phone" placeholder="Phone number"></label>
+      <label for="mensaje"><textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Leave us a message."></textarea></label>
+      <input type="submit" value="Send">
+  </div>
+  </section>
+</body>
     
 
     <!-- Scroll to top -->
-    
-    
+    <a href="#about">
+    <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </a>
+      
+  
     
     
 
