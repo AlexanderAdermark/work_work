@@ -11,10 +11,15 @@ scrollUp.addEventListener("click", () => {
 
 // Nav hamburgerburger selections
 
-const burger = document.querySelector("#burger-menu");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
+const hamburger = document.queryselector(".hamburger");
+const navMenu = document.queryselector(".nav-Menu");
 
-burger.addEventListener("click", () => {
-    ul.classList.toggle("show");
-  });
+hamburger.addEventListener("click", () =>{
+  hamburger.classlist.toggle("active");
+  navMenu.classlist.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n,addEventListener("click",()=>{
+  hamburger.classlist.remove("active");
+  navMenu.classlist.remove("active");
+}))
