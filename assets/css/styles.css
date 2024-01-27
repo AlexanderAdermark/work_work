@@ -14,9 +14,17 @@ html {
   box-sizing: border-box;
  
 }
+body{
+  position:relative;
+  font-family:"roboto", Helvetica, sans-serif;
+}
 
 header {
-  background-color:rgba(224, 221, 216, 0.632);
+  position: fixed;
+  margin: 0;
+  width:100%;
+  
+
 }
 
 ul {
@@ -32,17 +40,17 @@ a:hover {
   color:#08c5fe;
 }
 
-body {
-  font-family:"roboto", Helvetica, sans-serif;
-}
 
 .navbar {
- min-height: 70px;
- display:flex;
- justify-content: space-between;
- align-items: center;
- padding: 0,24px;
- background-color: rgba(224, 221, 216, 0.63);
+width: 100%;
+margin: auto;
+min-height: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color:rgba(224, 221, 216, 0.632);
+
+ 
 }
 
 .nav-Menu {
@@ -53,15 +61,17 @@ body {
 }
 
 .nav-brandig{
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 .nav-link{
   color:#011116;
   transition:0.7 sec ease;
+  
 }
 .nav-lnk:hover {
   color:#08c5fe;
   border-bottom: 2px solid;
+  
 }
 
 
@@ -302,11 +312,13 @@ input[type="submit"]{
   display:block;
   margin: 4% auto;
   width: 30%;
-  height: 4vh;
+  height: 6vh;
   background-color: #120A19;
   color: whitesmoke;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 15px;
+  
 }
 
 textarea{
@@ -334,7 +346,7 @@ font-family: "open sans";
 padding-top: 40px;
 color:#011116;
 }
-.footer-content {
+.footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,14 +354,14 @@ color:#011116;
   text-align: center;
 }
 
-.footer-content p {
+.footer-container p {
   text-transform: capitalize;
 
 }
 
 .socials {
   list-style: none;
-  display: flex;
+  display:flex;
   align-items: center;
   align-content: center;
   margin: 1rem 0 3rem 0;
@@ -358,17 +370,21 @@ color:#011116;
 
 .social li {
   margin: 0 10px;
+  display: inline-block;
+  
 
 }
 
 .social a {
   text-decoration: none;
   color:#011116 ;
+  
 }
 
 .social a i {
   font-size: 1.1rem;
   transition: color, 4sec ease;
+
   
 }
 
